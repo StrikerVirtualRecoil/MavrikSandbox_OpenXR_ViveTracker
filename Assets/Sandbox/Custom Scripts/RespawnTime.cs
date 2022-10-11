@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
 
 public class RespawnTime : MonoBehaviour
 {
@@ -15,9 +15,6 @@ public class RespawnTime : MonoBehaviour
     {
         Destroy(this.gameObject);
 
-        var prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Sandbox/Prefabs/Destructables.prefab");
-        var instance = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
-        
-        PrefabUtility.UnpackPrefabInstance(instance, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+        GameObject instance = Instantiate(Resources.Load("Destructables", typeof(GameObject))) as GameObject;
     }
 }
