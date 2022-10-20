@@ -7698,8 +7698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 937354697}
+  fall: {fileID: 180936515}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -13618,8 +13618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 597035295}
+  fall: {fileID: 517860063}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -20145,8 +20145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 913854721}
+  fall: {fileID: 1191366641}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -47553,7 +47553,7 @@ MonoBehaviour:
   hapticLibraries:
   - {fileID: -8805058150803424139, guid: 346c8feb3a703c04ba358a573ee1ab29, type: 3}
   - {fileID: 3497597907561417100, guid: 1a12dda329a6df142bd02e6aaf4e36a6, type: 3}
-  - {fileID: 4343544732731029679, guid: 16810e86d3488f34f9a3b2dc4c3a5800, type: 3}
+  - {fileID: 7337660218071954607, guid: 6306ddd2c5e0e27438090f87b752915b, type: 3}
   - {fileID: -5476367569076329870, guid: 3cb2dca50fac40645b67663271a9e4a0, type: 3}
   - {fileID: -116368613082140482, guid: 32e7c783a50cb214c9416797a0373ba7, type: 3}
   - {fileID: 4910372099687449555, guid: 054bc7d91c044314e862e6f200b6c17c, type: 3}
@@ -51000,8 +51000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 17808416}
+  fall: {fileID: 1307662763}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -51467,8 +51467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 1649298006}
+  fall: {fileID: 624257959}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -69349,8 +69349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 303009996}
+  fall: {fileID: 1094682917}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 5016082921066724719}
@@ -83719,6 +83719,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
         type: 3}
+      propertyPath: mavrikClassicShot
+      value: 
+      objectReference: {fileID: 3109259565737378011, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
       propertyPath: sfx.mavrikBlaster
       value: 
       objectReference: {fileID: 0}
@@ -83737,6 +83743,42 @@ PrefabInstance:
       propertyPath: sfx.fullAutoBlaster
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_1
+      value: 
+      objectReference: {fileID: 5208972125562532901, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_2
+      value: 
+      objectReference: {fileID: 7199643930589529836, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_3
+      value: 
+      objectReference: {fileID: 5964636904787061480, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_4
+      value: 
+      objectReference: {fileID: -5581459907801598304, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_5
+      value: 
+      objectReference: {fileID: 3689025354859903310, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
+    - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
+        type: 3}
+      propertyPath: Haptics.laser_shot_6
+      value: 
+      objectReference: {fileID: -8156615692791047862, guid: 6306ddd2c5e0e27438090f87b752915b,
+        type: 3}
     - target: {fileID: 5016082921943255839, guid: 80296a396b54eb14c9b39d6da0c630d9,
         type: 3}
       propertyPath: sfx.ballzookaBlaster

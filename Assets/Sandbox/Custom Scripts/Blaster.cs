@@ -531,42 +531,44 @@ public class Blaster : MonoBehaviour
 
     void ForwardBarSensorsTouched()
     {
-        if (mavrik.GetRawSensorDown(forwardBar1))
-        {
-            rate = 7f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar2))
-        {
-            rate = 8f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar3))
-        {
-            rate = 9f;
-        } 
-        else if (mavrik.GetRawSensorDown(forwardBar4))
-        {
-            rate = 10f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar5))
-        {
-            rate = 11f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar6))
-        {
-            rate = 12f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar7))
-        {
-            rate = 13f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar8))
-        {
-            rate = 12f;
-        }
-        else if (mavrik.GetRawSensorDown(forwardBar9))
-        {
-            rate = 15f;
-        }
+        
+            if (mavrik.GetRawSensorDown(forwardBar1))
+            {
+                rate = 7f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar2))
+            {
+                rate = 8f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar3))
+            {
+                rate = 9f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar4))
+            {
+                rate = 10f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar5))
+            {
+                rate = 11f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar6))
+            {
+                rate = 12f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar7))
+            {
+                rate = 13f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar8))
+            {
+                rate = 12f;
+            }
+            else if (mavrik.GetRawSensorDown(forwardBar9))
+            {
+                rate = 15f;
+            }
+        
     }
 
     void SlideSensorsTouched() 
@@ -574,28 +576,36 @@ public class Blaster : MonoBehaviour
 
         if (mavrik.GetRawSensorDown(slideBar11) || mavrik.GetRawSensorDown(slideBar12))
         {
-            mavrikClassicShot = Haptics.laser_shot_1;
+            mavrikClassicShot = Haptics.laser_shot_6;
+            laser.pitch = 1;
         }
         else if (mavrik.GetRawSensorDown(slideBar9) || mavrik.GetRawSensorDown(slideBar10))
         {
-            mavrikClassicShot = Haptics.laser_shot_2;
+            mavrikClassicShot = Haptics.laser_shot_5;
+            laser.pitch = 1.1f;
         }
         else if (mavrik.GetRawSensorDown(slideBar7) || mavrik.GetRawSensorDown(slideBar8))
         {
-            mavrikClassicShot = Haptics.laser_shot_3;
+            mavrikClassicShot = Haptics.laser_shot_4;
+            laser.pitch = 1.2f;
         }
         else if (mavrik.GetRawSensorDown(slideBar5) || mavrik.GetRawSensorDown(slideBar6))
         {
-            mavrikClassicShot = Haptics.laser_shot_4;
+            mavrikClassicShot = Haptics.laser_shot_3;
+            laser.pitch = 1.3f;
+
         }
         else if (mavrik.GetRawSensorDown(slideBar3) || mavrik.GetRawSensorDown(slideBar4))
         {
-            mavrikClassicShot = Haptics.laser_shot_5;
+            mavrikClassicShot = Haptics.laser_shot_2;
+            laser.pitch = 1.4f;
         }
         else if (mavrik.GetRawSensorDown(slideBar1) || mavrik.GetRawSensorDown(slideBar2))
         {
-            mavrikClassicShot = Haptics.laser_shot_6;
+            mavrikClassicShot = Haptics.laser_shot_1;
+            laser.pitch = 1.5f;
         }
+
     }
 
     public void CrossBowShootHaptic()

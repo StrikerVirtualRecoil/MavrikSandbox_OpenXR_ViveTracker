@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 3972338054279099557}
+  fall: {fileID: 1383314726463555262}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}
@@ -434,8 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 3946996015407342768}
+  fall: {fileID: 7008675488709005172}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}
@@ -576,8 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 628384314580759543}
+  fall: {fileID: 7748488642974641846}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}
@@ -764,8 +764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 1535200678916489209}
+  fall: {fileID: 7174381137647764516}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}
@@ -906,8 +906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 1646248333345376366}
+  fall: {fileID: 8545083026139788542}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}
@@ -1048,8 +1048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90c76a88963d873469f0c8f9ec19e6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impact: {fileID: 0}
-  fall: {fileID: 0}
+  impact: {fileID: 224923720540090115}
+  fall: {fileID: 7511885481212756389}
   groundRumble: {fileID: -2904661372663783709, guid: 346c8feb3a703c04ba358a573ee1ab29,
     type: 3}
   mavrik: {fileID: 0}

@@ -73,7 +73,7 @@ MonoBehaviour:
         durationTarget: 0
     - deviceId: hammerTop
       sequence:
-      - sampleObject: {fileID: 11400000, guid: 3eda809bb545da64ca840fdc08f58ab5, type: 2}
+      - sampleObject: {fileID: 0}
         modifyIntensity: 0
         intensityCurve:
           serializedVersion: 2
