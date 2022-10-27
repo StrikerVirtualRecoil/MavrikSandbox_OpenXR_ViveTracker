@@ -13,6 +13,7 @@ public class BallCollide : MonoBehaviour
     public GameObject sbp;
     public HapticEffectAsset smallBallCollide;
     public HapticEffectAsset bigBallCollide;
+    public AudioSource ballBounce;
 
 
     void Awake()
@@ -40,6 +41,14 @@ public class BallCollide : MonoBehaviour
                 {
                     mavrik.FireHaptic(bigBallCollide);
                 }
+            }
+        }
+        else
+        {
+            if (ballBounce != null)
+            {
+                //play bounce sfx
+                ballBounce.Play();
             }
         }
     }
