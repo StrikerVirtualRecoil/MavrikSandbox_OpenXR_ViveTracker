@@ -141,16 +141,19 @@ public class Blaster : MonoBehaviour
 
         ballShots = false;
 
+        InvokeRepeating("Shoot", 0f, 1 / rate);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         FireMode();
-        FiringHandler();
+        //FiringHandler();
         Reload();
         ForwardBarSensorsTouched();
-        SlideSensorsTouched();  
+        SlideSensorsTouched();
+        
     }
 
     public void Shoot()
