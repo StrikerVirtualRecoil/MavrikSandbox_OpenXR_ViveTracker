@@ -170,8 +170,9 @@ public class Blaster : MonoBehaviour
                 psr.material = Resources.Load<Material>("M_Led 1");
             }
 
-            Instantiate(projectileLaser, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, 1000f));
-            Instantiate(flash, firePoint);
+            //Instantiate(projectileLaser, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, 1000f));
+            //Instantiate(flash, firePoint);
+            Debug.Log("Pew Pew");
             laser.Play(0);
             mavrik.FireHaptic(mavrikClassicShot);
         }
