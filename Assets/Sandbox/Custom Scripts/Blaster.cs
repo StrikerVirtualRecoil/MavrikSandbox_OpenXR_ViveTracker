@@ -172,9 +172,10 @@ public class Blaster : MonoBehaviour
 
             //Instantiate(projectileLaser, firePoint.position, firePoint.rotation).GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, 0, 1000f));
             //Instantiate(flash, firePoint);
-            Debug.Log("Pew Pew");
+            
             laser.Play(0);
             mavrik.FireHaptic(mavrikClassicShot);
+            Debug.Log("Pew Pew");
         }
         else if (fireMode == 3)
         {
