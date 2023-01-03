@@ -50,7 +50,12 @@ public class FlyingSaucer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Repair();
+        Behavior();
+    }
 
+    private void Repair()
+    {
         if (this.broken && (this.timer < repairTime)) // if this saucer is broken and timer is less than repairTime, increment timer with the current time value
         {
             this.timer += Time.deltaTime;
@@ -59,9 +64,10 @@ public class FlyingSaucer : MonoBehaviour
         {
             IsFixed();
         }
+    }
 
-       
-
+    private void Behavior()
+    {
         // When a UFO is spawned, it begins moving toward the end point
         if (Vector3.Distance(endPoint.position, this.transform.position) > 0.001)
         {
@@ -69,36 +75,40 @@ public class FlyingSaucer : MonoBehaviour
         }
         else
         {
-            if (!hasTarget)
+            Abduct();
+        }
+    }
+
+    private void Abduct()
+    {
+        if (!hasTarget)
+        {
+            // Once the end point is reached, it begins emitting the beam and grabs the cow
+            if (!antiGravity.isPlaying)
             {
-                // Once the end point is reached, it begins emitting the beam and grabs the cow
-                if (!antiGravity.isPlaying)
-                {
-                    antiGravity.Play();
-                }
-                hasTarget = true;
-                count = 0;
-                target.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                target.gameObject.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(0, 2), Random.Range(0, 2), 1) * torque);
+                antiGravity.Play();
             }
-            else // Once the beam is fully emitted and cow is grabbed, it begins moving to the moon
+            hasTarget = true;
+            count = 0;
+            target.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            target.gameObject.GetComponent<Rigidbody>().AddTorque(new Vector3(Random.Range(0, 2), Random.Range(0, 2), 1) * torque);
+        }
+        else // Once the beam is fully emitted and cow is grabbed, it begins moving to the moon
+        {
+            if (count == wait)
             {
-                if (count == wait)
-                {
-                    target.SetParent(this.transform);
-                    ReturnHome();
-                    count++;
-                }
-                else if (count < wait)
-                {
-                    target.transform.position = Vector3.MoveTowards(target.transform.position, this.transform.position - new Vector3(0, 8f, 0), Time.deltaTime);
-                    //Rotate the UFO
-                    target.transform.Rotate(0.0f, rotation, 0.0f, Space.Self);
-                    count++;
-                }
+                target.SetParent(this.transform);
+                ReturnHome();
+                count++;
+            }
+            else if (count < wait)
+            {
+                target.transform.position = Vector3.MoveTowards(target.transform.position, this.transform.position - new Vector3(0, 8f, 0), Time.deltaTime);
+                //Rotate the UFO
+                target.transform.Rotate(0.0f, rotation, 0.0f, Space.Self);
+                count++;
             }
         }
-
     }
 
     private void OnCollisionEnter(Collision collision)
